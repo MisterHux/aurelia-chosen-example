@@ -18,18 +18,41 @@
 
       
     </form>
-        <chosen class="dropdown col-md-7 col-sm-7" 
-                       id="myDatepicker" 
+   
+  </section> 
+   <div class="container-fluid">
+    <div class="row-fluid">
+        <h2 >Standard Select</h2>
+        <span >Standard select with default settings</span>
+        <div class="row">
+          <div class="col-md-10">
+                    <chosen class="dropdown col-md-10" 
+                        id="myBears" 
+                        label="Bears"
+                        noLabel
+                        options.bind="firstExample" 
+                        value.bind="item"></chosen>
+            </div>
+        </div>
+        <div class="row">
+          <p class="col-md-10 help-block">${item.name}</p></div>
+        </div>
+     
+   </div>
+      
+    <!--
+      <chosen class="dropdown col-md-7 col-sm-7" 
+                       id="myBears" 
                        options.bind="firstExample" 
                        value.bind="item" 
                        display-property="title" 
                        disabled-property="disabled" 
-                       label="Data Items"
+                       label="Bears"
                        change.delegate="myEventCallback($event)"
                        chosen-options='no_results_text: "Oops, we got nothing!", disable_search_threshold: 3' 
                        help-text="This is a help text to explain what to do.  Please select an item to continue."
                        inlineForm 
                        clear></chosen>
-         <p class="help-block">${item.name}</p>
-  </section>
+    -->
+         
 </template>

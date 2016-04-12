@@ -12,7 +12,6 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-
   map: {
     "MisterHux/aurelia-chosen": "github:MisterHux/aurelia-chosen@0.5.8",
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.0-beta.1.2.0",

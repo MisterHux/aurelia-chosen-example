@@ -1,7 +1,7 @@
 //import {computedFrom} from 'aurelia-framework';
 import {computedFrom, LogManager, inject, bindable, bindingMode} from 'aurelia-framework';
 import DataItem from 'models/DataItem';
-import {SampleBears} from 'sample-items';
+import {SampleBears} from 'sample-items-bears';
 import * as _ from 'lodash';
 
 export class Welcome {
